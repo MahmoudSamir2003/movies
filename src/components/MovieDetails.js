@@ -13,7 +13,7 @@ const MovieDetails = () => {
     }
     useEffect(() => {
         getMovieDetails();
-    },)
+    }, [])
     return (
         <div>
             <Row className="justify-content-center">
@@ -79,7 +79,5 @@ const MovieDetails = () => {
         </div>
     )
 }
-    
-
 
 export default MovieDetails
