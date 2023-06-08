@@ -13,7 +13,7 @@ const MovieDetails = () => {
     }
     useEffect(() => {
         getMovieDetails();
-    }, [getMovieDetails])
+    })
     return (
         <div>
             <Row className="justify-content-center">
