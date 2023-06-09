@@ -12,9 +12,9 @@ const PaginationComponent = () => {
     const pages = useSelector((state) => state.pageCount);
 
     useEffect(() => {
-        setpageCount(pages)
-    }, [])
-
+      setpageCount(pages);
+    }, [pages]);
+    
 
     const handlePageClick = (data) => {
         dispatch(getPage(data.selected + 1))
